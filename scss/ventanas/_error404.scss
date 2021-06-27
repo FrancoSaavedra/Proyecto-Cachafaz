@@ -1,0 +1,44 @@
+
+.nav-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-img-error{
+        width: 12rem;
+        margin: 1rem 0;
+
+
+    }
+}
+.container-error {
+    color: blanchedalmond;
+    margin: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .encabezado-error {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+    .texto-error {
+        color: blanchedalmond;
+        font-size: 1.3rem;
+    }
+    .home {
+        color: blanchedalmond;
+        font: bold;
+        border: outset nth($colores, 4);
+        border-radius: 2rem;
+        background-color: nth($colores, 4);
+        display: inline-block;
+        margin: 2rem 0;
+        padding: 0.5rem;
+        transition: all 250ms;
+        &:hover {
+            transform: scale(1.05);
+            z-index: 1;
+            box-shadow: 0.3rem 0.3rem 1rem nth($colores, 12 );
+            
+        }
+    }
+}

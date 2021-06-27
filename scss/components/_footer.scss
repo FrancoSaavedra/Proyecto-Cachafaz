@@ -1,0 +1,85 @@
+/*FOOTER*/
+
+.img-local1 {
+    @media(max-width: 600) {
+        display: none;
+    }
+}
+
+.footer {
+    width: 100%;
+    margin: auto;
+    
+    .container-footer {
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-around;
+        text-align: center;
+        @media (max-width:414px) {
+            display: block;
+        }
+        ul {
+            cursor: pointer;
+            list-style: none;
+        }
+        .colum1 {
+            @include colum(400px);
+            
+            ul {
+                margin-top: 0.6rem;
+            }
+            .redes {
+                .logos-redes {
+                    display: inline-flex;
+                    margin: 0.7rem 0;
+
+                    .fb {
+                        margin-right: 1rem;
+                    }
+
+                    img {
+                        width: 2rem;
+                        border-radius: 0.80rem;
+                        
+                    }
+                }
+            }
+        }
+        .colum2 {
+            @include colum (400px);
+
+            img {
+                width: 8rem;
+            }
+        }
+    }
+}
+/*copyright*/
+.copyright {
+    background-color: nth($colores, 12 );
+    color: nth($colores, 4 );
+    .texto-copyright {
+        color: nth($colores, 4 );;
+        text-decoration: none;
+        &:hover {
+            color: nth($colores, 8);
+        }
+    }
+}
+
+
+
+
+
+
+/*wpp*/
+.logo-wpp {
+    img {
+        width: 5rem;
+        margin: 1.5rem;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+}

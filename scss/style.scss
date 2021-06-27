@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+@import "../scss/base/listas";
+body {
+    background-color: nth($colores, 11 );
+}
+@import "../scss/base/maps";
+
+.row {
+    border-bottom: map-get( $border , border-bottom);
+}
+@import "../scss/components/header";
+@import "../scss/components/quienes-somos";
+@import "../scss/components/products";
+@import "../scss/components/sucursales";
+@import "../scss/components/footer";
+@import "../scss/ventanas/nosotros";
+@import "../scss/ventanas/productos";
+@import "../scss/base/condiciones";
+@import "../scss/ventanas/error404";
+
+
+

@@ -1,0 +1,46 @@
+@import "../base/variables";
+/*Quienes Somos*/ 
+
+.texto {
+    color: nth($colores, 2 );
+}
+h3 {
+    font-size: $size-h3;
+}
+
+.imagen-index-nosotros {    
+    display: block;
+    transition: all 250ms;
+    width: 100%;
+
+    &:hover {
+        transform: scale(1.2);
+        z-index: 1;
+        box-shadow: 0.3rem 0.3rem 1rem nth($colores, 11 );
+    }
+
+    @media(min-width: 402px){
+        width: 80%;
+    }
+}
+
+.bottom{
+    a{
+        color: nth($colores, 6 );
+        padding-left: 0rem;
+        text-align: left;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+            border: outset nth($colores, 7 );
+        }
+        
+    }
+}
+.link-nosotros{
+    a{
+        &::before {
+            content: "📖";
+        }
+    }
+}

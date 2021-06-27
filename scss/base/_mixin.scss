@@ -1,0 +1,24 @@
+
+/* Mixin Header*/ 
+
+
+/*Mixin Navbar*/
+@mixin ul-navbar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+/*logo*/
+@mixin img-logo ($width, $m-top, ){
+    width: $width;
+    margin-top: $m-top;
+    transition: all 1s;
+}
+
+
+/*Mixin Footer*/
+@mixin colum ($max-width) {
+    max-width: $max-width;
+}

@@ -1,0 +1,17 @@
+
+@import "../base/listas";
+
+/*Seccion sucursales*/ 
+@mixin condicion-fsize($f-size) {
+    font-size: $f-size;
+
+    @if $f-size == 1rem {
+        
+        border: outset 0.31rem nth($colores, 6);
+        
+    } @else {
+        
+        border: solid nth($colores, 2 );
+    
+    }
+}

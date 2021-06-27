@@ -1,0 +1,12 @@
+/*Seccion productos*/ 
+@import "../base/variables";
+h3{
+    font-size: $size-h3;
+}
+.link-products{
+    a{
+        &::before {
+            content: "🥯";
+        }
+    }
+}
