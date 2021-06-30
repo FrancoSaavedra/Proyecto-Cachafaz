@@ -13,7 +13,7 @@ body {
 }
 @import "../scss/base/maps";
 
-.row {
+.row-border {
     border-bottom: map-get( $border , border-bottom);
 }
 @import "../scss/components/header";

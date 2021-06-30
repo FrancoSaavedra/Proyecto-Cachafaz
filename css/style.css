@@ -15,7 +15,7 @@ body {
 }
 
 /*MAPS*/
-.row {
+.row-border {
   border-bottom: 2px solid burlywood;
 }
 
@@ -56,7 +56,6 @@ body {
   justify-content: center;
   width: auto;
   padding: 0.625rem 0;
-  
 }
 @media (max-width: 401px) {
   .navbar {
@@ -118,12 +117,12 @@ body {
 .navbar ul li .nav-item:hover {
   border: outset rgba(197, 161, 71, 0.726);
 }
-/*Imágen Carrito*/
 .navbar .nav-img-carrito {
   cursor: pointer;
-  right: 2rem;
   position: fixed;
-  width: 2.5rem;
+  right: 1rem;
+  margin-right: 1rem;
+  width: 2rem;
   transition: all 1s;
 }
 .navbar .nav-img-carrito:hover {
@@ -131,7 +130,8 @@ body {
 }
 @media (min-width: 402px) and (max-width: 1263px) {
   .navbar .nav-img-carrito {
-    right: 0.5rem;
+    right: 3rem;
+    margin-right: 1rem;
   }
 }
 
@@ -139,7 +139,7 @@ body {
 .foto-header {
   width: 100%;
   height: 90vh;
-  background-image: url(../Image/FotoHeader.jpg);
+  background-image: url(../image/FotoHeader.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,7 +214,6 @@ h3 {
 }
 .btn-menu ul li {
   padding: 0.32rem;
-  border-bottom: 0.1rem solid #313030;
 }
 
 /*Submenu*/
@@ -231,19 +230,14 @@ h3 {
 }
 
 /*Imagenes*/
-.img-local1 {
-  transition: all 300ms;
-}
-.img-local1:hover {
-  transform: scale(1);
-  z-index: 1;
-}
-
 /*tamaño*/
+.row-img-locales .img-local1 {
+  margin-left: 2rem;
+}
 .row-img-locales img {
-  width: 100%;
+  display: flex;
+  width: 95%;
   height: 100%;
-  margin-left: 0;
 }
 
 /*FOOTER*/
