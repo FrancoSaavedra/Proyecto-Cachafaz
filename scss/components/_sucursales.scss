@@ -8,6 +8,19 @@
     display: inline-block;
     @include condicion-fsize(1rem);
     font-weight: bolder;
+    /*Submenu*/ 
+    .sub-menu {
+        color: nth($colores, 12 );
+        position: absolute;
+        background: nth($colores, 5 );
+        list-style: none;
+        border-radius: 0.31rem;
+        display: none;
+        padding: 0.63rem;
+        align-items: center;
+        cursor: pointer;
+    }
+    
     &:hover .sub-menu {
         display: block;
     }
@@ -17,27 +30,17 @@
             
         }
     }
+    
 }
 
-/*Submenu*/ 
-.sub-menu {
-    color: nth($colores, 12 );
-    position: absolute;
-    background: nth($colores, 5 );
-    list-style: none;
-    border-radius: 0.31rem;
-    display: none;
-    padding: 0.63rem;
-    align-items: center;
-    cursor: pointer;
-}
+
 
 /*Imagenes*/ 
 
 
  /*tamaño*/ 
  .row-img-locales{
-    .img-local1{
+    .img-local{
         margin-left: 2rem;
     }
      img{

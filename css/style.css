@@ -208,16 +208,9 @@ h3 {
   font-size: 1rem;
   border: outset 0.31rem #8f6c16;
   font-weight: bolder;
+  /*Submenu*/
 }
-.btn-menu:hover .sub-menu {
-  display: block;
-}
-.btn-menu ul li {
-  padding: 0.32rem;
-}
-
-/*Submenu*/
-.sub-menu {
+.btn-menu .sub-menu {
   color: black;
   position: absolute;
   background: rgba(255, 193, 36, 0.863);
@@ -228,10 +221,16 @@ h3 {
   align-items: center;
   cursor: pointer;
 }
+.btn-menu:hover .sub-menu {
+  display: block;
+}
+.btn-menu ul li {
+  padding: 0.32rem;
+}
 
 /*Imagenes*/
 /*tamaño*/
-.row-img-locales .img-local1 {
+.row-img-locales .img-local {
   margin-left: 2rem;
 }
 .row-img-locales img {
