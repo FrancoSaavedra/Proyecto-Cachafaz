@@ -236,10 +236,30 @@ h3 {
 .row-img-locales .img-local {
   margin-left: 2rem;
 }
+@media (max-width: 401px) {
+  .row-img-locales .img-local {
+    margin-left: 0;
+  }
+}
+@media (min-width: 402px) and (max-width: 1263px) {
+  .row-img-locales .img-local {
+    margin-left: 0;
+  }
+}
 .row-img-locales img {
   display: flex;
   width: 95%;
   height: 100%;
+}
+@media (max-width: 401px) {
+  .row-img-locales img {
+    width: 100%;
+  }
+}
+@media (min-width: 402px) and (max-width: 1263px) {
+  .row-img-locales img {
+    width: 100%;
+  }
 }
 
 /*FOOTER*/
