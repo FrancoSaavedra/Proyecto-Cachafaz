@@ -142,8 +142,8 @@ body {
 
 /*foto de fondo*/
 .foto-header {
-  width: auto;
-  height: 90vh;
+  width: 100%;
+  height: 85vh;
   background-image: url(../image/fotoheader.jpg);
   background-repeat: no-repeat;
   background-size: cover;
