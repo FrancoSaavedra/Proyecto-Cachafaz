@@ -17,13 +17,14 @@
     display: none;
     align-items: center;
     margin: 0.5rem;
-    @media (min-width:401px) and (max-width:1263px) {
+    @media (max-width:414px) {
+        display: block;
+    }
+    @media (min-width:415px) and (max-width:1263px) {
         display: block;
         margin-left: 45%;
     }
-    @media (max-width:401px) {
-        display: block;
-    }
+
 }
 
 .navbar {
@@ -34,10 +35,10 @@
     padding: 0.625rem 0;
         
 
-    @media (max-width:401px) {
+    @media (max-width:414px) {
         width: 100%;
     }
-    @media (min-width: 402px) and (max-width:1263px) {
+    @media (min-width: 415px) and (max-width:1263px) {
         width: 100%;
     }
     ul {
@@ -53,11 +54,11 @@
                 font-weight: bold;
                 font-style: oblique;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                @media(max-width:401px) {
+                @media(max-width:414px) {
                     padding: 0.5rem 0;
                     margin: 1rem;
                 }
-                @media(min-width:402px) and (max-width:1263px) {
+                @media(min-width:415px) and (max-width:1263px) {
                     padding: 0.5rem 0;
                     margin: 1rem;
                     text-align: left;
@@ -68,10 +69,10 @@
             .nav-img {
                 @include img-logo(11rem, 0.2rem);
                 
-                @media (max-width:401px){
+                @media (max-width:414px){
                     display: none;
                 }
-                @media(min-width:402px) and (max-width:1263px) {
+                @media(min-width:415px) and (max-width:1263px) {
                     display: none;
                 }
                 &:hover {
@@ -91,13 +92,16 @@
         position: fixed;
         right: 0rem;
         margin-right: 1rem;
-        width: 2rem;
+        width: auto;
         transition: all 1s;
         &:hover{
             transform: scale(1.3);
         }
-        @media (min-width:402px) and (max-width:1263px) {
-            right: 3rem;
+        @media (max-width:414px){
+            margin-right: 0.5rem;
+        }
+        @media (min-width:415px) and (max-width:1263px) {
+            right: 1rem;
             margin-right: 1rem;
         }
     }
@@ -108,10 +112,9 @@
 
 /*foto de fondo*/ 
 .foto-header {
-    width: 100%;
+    width: auto;
     height: 90vh;
     background-image: url(../image/fotoheader.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
