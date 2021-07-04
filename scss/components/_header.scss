@@ -16,14 +16,13 @@
     display: flex;
     display: none;
     align-items: center;
-    
-    margin: 0.5rem;
+    justify-content: center;
+    margin: 0.5rem auto;
     @media (max-width:414px) {
         display: block;
     }
     @media (min-width:415px) and (max-width:1263px) {
         display: block;
-        margin-left: 40%;
     }
 
 }
@@ -33,16 +32,29 @@
     align-items: center;
     justify-content: center;
     width: auto;
-
         
 
     @media (max-width:414px) {
         width: 90%;
+        
     }
     @media (min-width: 415px) and (max-width:1263px) {
         width: 100%;
     }
     ul {
+        @media(max-width:414px) {
+            margin-left: 2rem;
+            display: flex;
+            justify-content: center;
+            
+        }
+        @media(min-width:415px) and (max-width:1263px) {
+            display: flex;
+            justify-content: center;
+
+
+        } 
+
         @include ul-navbar;
 
         li {
@@ -57,12 +69,15 @@
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 @media(max-width:414px) {
                     padding: 0.5rem 0;
-                    margin: 1rem;
+                    margin: 0.5rem 1rem;
+                    font-size: 0.8rem;
+                    
                 }
                 @media(min-width:415px) and (max-width:1263px) {
                     padding: 0.5rem 0;
                     margin: 1rem;
-                    text-align: left;
+                    text-align: center;
+                    font-size: 0.12;
                 } 
 
                
@@ -101,6 +116,7 @@
         @media (max-width:414px){
             width: 1.5rem;
             margin-right: 0.5rem;
+            margin-top: 2rem;
         }
         @media (min-width:415px) and (max-width:1263px) {
             width: 1.5rem;
