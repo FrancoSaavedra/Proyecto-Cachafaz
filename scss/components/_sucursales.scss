@@ -44,6 +44,10 @@
 
  /*tamaño*/ 
  .row-img-locales{
+     width: 100%;
+     @media (max-width:414px){
+        width: 100%;
+    }
     .img-local{
         margin-right: 1rem;
         padding-left: 1rem;
@@ -51,28 +55,27 @@
             display: none;
         }
         @media (min-width:415px) and (max-width:1263px) {
-            margin-left: 0;
+            padding-left: 1.5rem;
         }
     }
     img{
         width: 100%;
         height: 100%;
         @media (max-width:414px){
-            width: 100%;
+            padding-left: 1.5rem;
         }
         @media (min-width:415px) and (max-width:1263px) {
-            width: 100%;
+            padding-left: 1.5rem;
         }
 
     }
     .maps {
         @media (max-width:414px){
-            width: 100%;
-            margin-right: 0;
+            padding-left: 1.5rem;
+            
         }
         @media (min-width:415px) and (max-width:1263px) {
-            width: 100%;
-            margin-right: 0;
+            padding-left: 1.5rem;
         }
     }
 }

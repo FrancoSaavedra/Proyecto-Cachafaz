@@ -46,7 +46,7 @@ body {
 @media (min-width: 415px) and (max-width: 1263px) {
   .logo-nav-media img {
     display: block;
-    margin-left: 45%;
+    margin-left: 40%;
   }
 }
 
@@ -58,7 +58,7 @@ body {
 }
 @media (max-width: 414px) {
   .navbar {
-    width: 100%;
+    width: 90%;
   }
 }
 @media (min-width: 415px) and (max-width: 1263px) {
@@ -239,6 +239,14 @@ h3 {
 
 /*Imagenes*/
 /*tamaño*/
+.row-img-locales {
+  width: 100%;
+}
+@media (max-width: 414px) {
+  .row-img-locales {
+    width: 100%;
+  }
+}
 .row-img-locales .img-local {
   margin-right: 1rem;
   padding-left: 1rem;
@@ -250,7 +258,7 @@ h3 {
 }
 @media (min-width: 415px) and (max-width: 1263px) {
   .row-img-locales .img-local {
-    margin-left: 0;
+    padding-left: 1.5rem;
   }
 }
 .row-img-locales img {
@@ -259,24 +267,22 @@ h3 {
 }
 @media (max-width: 414px) {
   .row-img-locales img {
-    width: 100%;
+    padding-left: 1.5rem;
   }
 }
 @media (min-width: 415px) and (max-width: 1263px) {
   .row-img-locales img {
-    width: 100%;
+    padding-left: 1.5rem;
   }
 }
 @media (max-width: 414px) {
   .row-img-locales .maps {
-    width: 100%;
-    margin-right: 0;
+    padding-left: 1.5rem;
   }
 }
 @media (min-width: 415px) and (max-width: 1263px) {
   .row-img-locales .maps {
-    width: 100%;
-    margin-right: 0;
+    padding-left: 1.5rem;
   }
 }
 
@@ -306,6 +312,11 @@ h3 {
 }
 .footer .container-footer .colum1 ul {
   margin-top: 0.6rem;
+}
+@media (min-width: 415px) and (max-width: 1263px) {
+  .footer .container-footer .colum1 ul {
+    padding-right: 1rem;
+  }
 }
 .footer .container-footer .colum1 .redes .logos-redes {
   display: inline-flex;

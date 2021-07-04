@@ -24,6 +24,9 @@
             
             ul {
                 margin-top: 0.6rem;
+                @media (min-width:415px) and (max-width:1263px) {
+                    padding-right: 1rem;
+                }
             }
             .redes {
                 .logos-redes {
