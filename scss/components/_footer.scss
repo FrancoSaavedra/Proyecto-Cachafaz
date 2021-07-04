@@ -78,4 +78,8 @@
         right: 0;
         bottom: 0;
     }
+    @media(max-width:414px) {
+        width: 3rem;
+        
+    }
 }

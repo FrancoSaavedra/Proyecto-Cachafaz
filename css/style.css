@@ -55,7 +55,6 @@ body {
   align-items: center;
   justify-content: center;
   width: auto;
-  padding: 0.625rem 0;
 }
 @media (max-width: 414px) {
   .navbar {
@@ -122,7 +121,7 @@ body {
   position: fixed;
   right: 0rem;
   margin-right: 1rem;
-  width: auto;
+  width: 2.7rem;
   transition: all 1s;
 }
 .navbar .nav-img-carrito:hover {
@@ -130,11 +129,13 @@ body {
 }
 @media (max-width: 414px) {
   .navbar .nav-img-carrito {
+    width: 1.5rem;
     margin-right: 0.5rem;
   }
 }
 @media (min-width: 415px) and (max-width: 1263px) {
   .navbar .nav-img-carrito {
+    width: 1.5rem;
     right: 1rem;
     margin-right: 1rem;
   }
@@ -145,6 +146,7 @@ body {
   width: 100%;
   height: 85vh;
   background-image: url(../image/fotoheader.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -343,6 +345,11 @@ h3 {
   position: fixed;
   right: 0;
   bottom: 0;
+}
+@media (max-width: 414px) {
+  .logo-wpp {
+    width: 3rem;
+  }
 }
 
 /*VENTANA NOSOTROS*/
