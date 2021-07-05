@@ -4,3 +4,8 @@
     background-color: nth($colores, 13 );
 
 }
+footer {
+    h3 {
+        font-size: $size-h3-footer;
+    }
+}
