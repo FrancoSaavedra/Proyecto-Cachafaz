@@ -12,6 +12,7 @@
         margin-top: 2rem;
         justify-content: space-around;
         text-align: center;
+        align-items: center;
         @media (max-width:414px) {
             display: block;
         }
@@ -19,7 +20,7 @@
             cursor: pointer;
             list-style: none;
         }
-        .colum1 {
+        .colum3 {
             @include colum(400px);
             
             ul {
@@ -49,7 +50,11 @@
             @include colum (400px);
 
             img {
-                width: 8rem;
+                width: 12rem;
+                @media (max-width:414px) {
+                    width: 8rem;
+                }
+
             }
         }
     }

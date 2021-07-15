@@ -321,6 +321,7 @@ h4 {
   margin-top: 2rem;
   justify-content: space-around;
   text-align: center;
+  align-items: center;
 }
 @media (max-width: 414px) {
   .footer .container-footer {
@@ -331,25 +332,25 @@ h4 {
   cursor: pointer;
   list-style: none;
 }
-.footer .container-footer .colum1 {
+.footer .container-footer .colum3 {
   max-width: 400px;
 }
-.footer .container-footer .colum1 ul {
+.footer .container-footer .colum3 ul {
   margin-top: 0.6rem;
 }
 @media (min-width: 415px) and (max-width: 1263px) {
-  .footer .container-footer .colum1 ul {
+  .footer .container-footer .colum3 ul {
     padding-right: 1rem;
   }
 }
-.footer .container-footer .colum1 .redes .logos-redes {
+.footer .container-footer .colum3 .redes .logos-redes {
   display: inline-flex;
   margin: 0.7rem 0;
 }
-.footer .container-footer .colum1 .redes .logos-redes .fb {
+.footer .container-footer .colum3 .redes .logos-redes .fb {
   margin-right: 1rem;
 }
-.footer .container-footer .colum1 .redes .logos-redes img {
+.footer .container-footer .colum3 .redes .logos-redes img {
   width: 2rem;
   border-radius: 0.8rem;
 }
@@ -357,7 +358,12 @@ h4 {
   max-width: 400px;
 }
 .footer .container-footer .colum2 img {
-  width: 8rem;
+  width: 12rem;
+}
+@media (max-width: 414px) {
+  .footer .container-footer .colum2 img {
+    width: 8rem;
+  }
 }
 
 /*copyright*/

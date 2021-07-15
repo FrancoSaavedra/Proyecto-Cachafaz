@@ -26,6 +26,77 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--Tittle-->
   <title>Cachafaz - Responsables de sacarte las ganas de comer algo dulce</title>
+  <!--Estilo del formulario-->
+  <style>
+    form {
+  /* Centrar el formulario en la página */
+  margin: 1rem auto;
+  width: auto;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1rem;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 4rem;
+  text-align: center;
+  
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada 
+  font: 1em sans-serif; */
+
+  /* Tamaño uniforme del campo de texto */
+  width: 20rem;
+  box-sizing: border-box;
+  background-color: rgba(197, 161, 71, 0.726);
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid black;
+  border-radius: 0.2rem;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5rem;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  border: 2px outset black;
+  padding: 0.2rem;
+  background-color: rgba(197, 161, 71, 0.726);
+  color: #000;
+}
+  </style>
 </head>
 
 <body>
@@ -75,7 +146,7 @@
             alfajores que en un primer momento era de maicena.
           </p>
           <p class="bottom link-nosotros">
-            <a href="/pages/nosotros.html" title="Acceso directo a la pestaña Quienes Somos"> Saber más.</a>
+            <a href="nosotros.html" title="Acceso directo a la pestaña Quienes Somos"> Saber más.</a>
           </p>
         </div>
 
@@ -93,7 +164,7 @@
             <li>Algunos productos son aptos para celiacos.</li>
             <li>Multiples Variedades.</li>
           </ul>
-          <p class="bottom link-products"><a href="./pages/productos.html" title="Acceso directo a la pestaña Productos"> Ver más.</a></p>
+          <p class="bottom link-products"><a href="productos.html" title="Acceso directo a la pestaña Productos"> Ver más.</a></p>
         </div>
 
       </div>
@@ -197,9 +268,46 @@
   
   <!--Footer-->
   <footer class="footer texto" id="contacto">
-    <div class="container-footer">
+    <div class=" row container-footer">
       <!--Colum1-->
-      <div class="colum1">
+      <div class="col-12 col-sm-3 col-lg-3 colum1">
+        <h4>Contáctanos</h4>
+        <form action="enviar.php" method="POST" name="contact-form">
+          <ul>
+            <li>
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="nombre">
+            </li>
+            <li>
+              <label for="mail">Email</label>
+              <input type="email" name="email" id="mail">
+            </li>
+
+            <li>
+              <label for="mensaje"> Mensaje</label>
+              <textarea name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
+    
+              <li class="button">
+                <button type="submit">
+                  Enviar
+                </button>
+              </li>
+            </li>
+
+          </ul>
+
+        </form>
+      </div>
+
+    
+      <!--fin colum1-->
+      <!--colum2-->
+      <div class=" col-12 col-sm-3 col-lg-3 text-center colum2">
+        <a href="index.html"> <img src="image/LogoCachafaz.png" alt="Logo de la empresa" loading="lazy" title="Logo de la empresa"></a>
+      </div>
+      <!--fin colum2-->
+      <!--colum3-->
+      <div class=" col-12 col-sm-3 col-lg-3 colum3">
         <h4>Contacto</h4>
         <ul class="list-footer">
           <li>Cachafaz.oficial@gmail.com</li>
@@ -214,21 +322,8 @@
           </div>
         </div>
       </div>
-      <!--fin colum1-->
-      <!--colum2-->
-      <div class="colum2">
-        <a href="index.html"> <img src="image/LogoCachafaz.png" alt="Logo de la empresa" loading="lazy" title="Logo de la empresa"></a>
-      </div>
-      <!--fin colum2-->
-      <!--colum3-->
-      <div class="colum3">
-        <h4>Tienda Online</h4>
-        <ul>
-          <li>Galletitas</li>
-          <li>Alfajores</li>
-          <li>Conitos</li>
-        </ul>
-      </div>
+
+
     </div>
     <!--fin colum3-->
 
