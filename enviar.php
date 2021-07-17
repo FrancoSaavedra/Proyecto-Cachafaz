@@ -9,7 +9,7 @@ $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 ​
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n"; //nombre del cliente//
+$mensaje = "Este mensaje fue enviado por" . $nombre . ",\r\n";  
 $mensaje .= "Su e-mail es: " . $mail . " \r\n"; //mail del cliente//
 $mensaje .= "Mensaje: " . $_POST[' mensaje '] . " \r\n"; //Mensaje del cliente//
 $mensaje .= "Enviado el " . date('d/m/Y', time()); //fecha de emisión de ese mail//

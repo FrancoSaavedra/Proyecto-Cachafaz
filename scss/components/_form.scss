@@ -1,0 +1,65 @@
+form {
+    /* Centrar el formulario en la página */
+    margin: 1rem auto;
+    width: auto;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin-top: 1rem;
+            label {
+                /* Tamaño y alineación uniforme */
+                display: inline-block;
+                width: 4rem;
+                text-align: center;
+                
+            }
+            input{
+                background-color: rgba(197, 161, 71, 0.726);
+                width: 20rem;
+                height: 2rem;
+                box-sizing: border-box;
+                border: 1px solid black;
+                border-radius: 0.2rem;
+            }
+            textarea {
+              /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+                 Por defecto, las áreas de texto tienen un tipo de letra monoespaciada 
+              font: 1em sans-serif; */
+            
+              /* Tamaño uniforme del campo de texto */
+              width: 20rem;
+              height: 5rem;
+              box-sizing: border-box;
+              background-color: rgba(197, 161, 71, 0.726);
+              vertical-align: top;
+            
+              /* Hacer coincidir los bordes del campo del formulario */
+              border: 1px solid black;
+              border-radius: 0.2rem;
+            }
+            
+            
+        }
+    }
+  
+}
+
+button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 100px; /* mismo tamaño que los elementos de la etiqueta */
+    margin-left: 4rem;
+    border: 2px outset black;
+    padding: 0.2rem;
+    background-color: rgba(197, 161, 71, 0.726);
+    color: #000;
+
+}
+  
+
+  
+
+  
+  
+  
