@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Franco Saavedra</h1>
 <h3 align="center">A passionate frontend developer from Argentina. That he is just starting his career in this field with a lot of motivation and ambition.</h3>
 
-- 🔭 I’m currently working on [Cachafaz](https://cachafaz.000webhostapp.com/)
+- 🔭 I’m currently working on [Cachafaz](https://cachafaz.000webhostapp.com/), where to be able to edit the code it is necessary to activate it with an npm init to be able to work on it without problems.
 
 - 📫 How to reach me **francosaave1998@gmail.com**
 
